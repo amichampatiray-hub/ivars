@@ -1,12 +1,9 @@
-
-
- 
-/* Reset & Base Styles */
-* {
-    margin: 0;
+{
+margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: 'enter', -apple-system, sans-serif;
+    
 }
 
 body {
@@ -150,269 +147,61 @@ body {
     background-color: #a30c73;
     transform: translateY(-2px);
 }
-
-/* Basic Responsiveness */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none; /* In a real project, you'd trigger a hamburger menu here */
-    }
-}
-.hero-slider {
-    position: relative;
-    height: 60vh; /* Adjust height as needed */
-    width: 100%;
-    overflow: hidden;
-    background: #000;
+/* Page Banner */
+.page-banner {
+    background: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
 }
 
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+/* Detailed Rows */
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0;
+}
+
+.detail-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.detail-text { flex: 1; }
+.detail-image { flex: 1; }
+.detail-image img { width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+.service-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    line-height: 1;
+}
+
+/* Process Section */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step {
+    text-align: center;
+    padding: 20px;
+}
+
+.step-num {
+    width: 50px;
+    height: 50px;
+    background: #007bff; /* Or your brand color */
+    color: white;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.slide.active {
-    opacity: 1;
-    z-index: 1;
-}
-
-.slide img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%); /* Makes text easier to read */
-}
-
-.hero-overlay {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    max-width: 700px;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #ddd;
-}
-
-/* Dots Navigation */
-.slider-dots {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    display: flex;
-    gap: 10px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    background: rgba(255,255,255,0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.dot.active {
-    background: #007bff;
-    width: 30px; /* Modern elongated dot */
-    border-radius: 10px;
-}
-/* Services Section Styles */
-.services-section {
-    padding: 80px 0;
-    background-color: ivory; /* Light cream background */
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-header .subtitle {
-    color: var(--primary-color);
-    text-transform: uppercase;
+    margin: 0 auto 15px;
     font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
 }
-
-.section-header h2 {
-    font-size: 2.5rem;
-    color: var(--dark-color);
-    margin: 10px 0;
-}
-
-.section-header p {
-    color: #777;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* The Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 0 20px;
-}
-
-.service-card {
-    background: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-}
-
-.icon-box {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    margin-bottom: 15px;
-    color: var(--dark-color);
-    font-size: 1.5rem;
-}
-
-.service-card p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.read-more {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-.read-more:hover {
-    text-decoration: underline;
-}
-
-next section
-.about-feature {
-    padding: 100px 0;
-    background: ivory;
-}
-
-.feature-flex {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-   
-}
-
-.feature-image {
-    flex: 1;
-    position: relative;
-}
-
-
-
-.feature-image img {
-    width: 60%;
-    border-radius: 20px;
-    box-shadow: 20px 20px 0px var(--primary-color); /* Artistic border effect */
-}
-
-.experience-badge {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    background: var(--dark-color);
-    color: rgb(25, 105, 175);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.experience-badge .years {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.feature-content {
-    flex: 1;
-    
-}
-
-.feature-list {
-    list-style: none;
-    margin: 30px 0;
-}
-
-.feature-list li {
-    margin-bottom: 20px;
-    padding-left: 30px;
-    position: relative;
-}
-
-/* Custom bullet points */
-.feature-list li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.feature-list li strong {
-    display: block;
-    color: var(--dark-color);
-    font-size: 1.1rem;
-}
-
-/* Responsive adjustment */
-@media (max-width: 992px) {
-    .feature-flex {
-        flex-direction: column;
-        text-align: center;
-      
-    }
-    .feature-list li {
-        text-align: left;
-    }
-    .feature-image img {
-        box-shadow: 10px 10px 0px var(--primary-color);
-    }
-}
-
-
-next section
-/* Footer Base */
 
 section {
     padding: 80px 0; /* 80px top and bottom, 0 left and right */
@@ -590,4 +379,3 @@ section {
         text-align: center;
     }
 }
-
