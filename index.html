@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ivars page</title>
+    <link rel="stylesheet" href="style.css">
+    <header class="navbar">
+    <div class="container">
+       <div class="logo">
+    <a href="#">
+        <img src="ivars-logo-f1.png" alt="" class="logo-img">
+        
+        <div class="brand-text-group">
+            <span class="brand-name">Institute<span> of vastu and research studies</span></span>
+            <span class="brand-tagline">"Adding Value, Impacting lives."</span>
+        </div>
+    </a>
+</div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Education</a></li>
+                 <li><a href="#">Success stories</a></li>
+                  <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-cta">
+            <a href="#" class="btn-contact">Book Appointment</a>
+        </div>
+    </div>
+</header> 
+<section class="hero-slider">
+    <div class="slide active">
+        <img src="banner_1_new.jpg" alt="Vastu 1">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="hero-subtitle">Welcome to IVARS</span>
+                <h1>Harmonize Your Space, <br><span class="highlight">Transform Your Life.</span></h1>
+                <p>Master the ancient science of Vastu Shastra with India's leading research institute.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn-primary">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="banner_2_new.png" alt="Vastu 2">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="hero-subtitle">Expert Consultancy</span>
+                <h1>Scientific Vastu <br><span class="highlight">For Modern Homes.</span></h1>
+                <p>Professional architectural guidance based on traditional Vedic principles.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn-primary">Book a Session</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="img new 2.jpg" alt="Peaceful Home Vastu">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="hero-subtitle">Impactful Education</span>
+                <h1>Master the Art of <br><span class="highlight">Space Alchemy.</span></h1>
+                <p>Join our certified courses and become a professional Vastu consultant.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn-primary">View Courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="img new 1.avif" alt="Architecture Design">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="hero-subtitle">Global Consultancy</span>
+                <h1>Harmonize Your <br><span class="highlight">Workspace.</span></h1>
+                <p>Boost productivity and well-being with our corporate Vastu audits.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn-primary">Consult Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+    </div>
+</section>
+
+ <script>
+        let currentStep = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            // Remove active class from ALL slides and dots
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+            
+            // Add active class ONLY to the current index
+            if(slides[index]) slides[index].classList.add('active');
+            if(dots[index]) dots[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentStep = (currentStep + 1) % slides.length;
+            showSlide(currentStep);
+        }
+
+        // Timer for auto-sliding
+        setInterval(nextSlide, 5000);
+    </script>
+    
+    <section class="services-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">Our Expertise</span>
+            <h2>Integrated Holistic Sciences</h2>
+            <p>Combining ancient wisdom with modern research to bring harmony to your life.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon-box">🏠</div>
+                <h3>Scientific Vastu</h3>
+                <p>Detailed analysis of residential and commercial spaces using energy scanning and Vedic principles.</p>
+                <a href="#" class="read-more">Learn More →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-box">✨</div>
+                <h3>Vedic Astrology</h3>
+                <p>Personalized horoscope readings and planetary alignments to guide your career, health, and relationships.</p>
+                <a href="#" class="read-more">Learn More →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-box">🎓</div>
+                <h3>Certified Courses</h3>
+                <p>Professional training programs for aspiring consultants, backed by our research-driven curriculum.</p>
+                <a href="#" class="read-more">Learn More →</a>
+            </div>
+            
+            
+            <div class="service-card">
+                <div class="icon-box">🏭</div>
+                <h3>Industrial Vastu</h3>
+                <p>Optimizing factory layouts and machinery placement to ensure smooth production and labor harmony.</p>
+                <a href="#" class="read-more">Learn More →</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon-box">🪐</div>
+                <h3>Astro-Vastu</h3>
+                <p>A unique integration of your birth chart with your living space to remove personal growth blockages.</p>
+                <a href="#" class="read-more">Learn More →</a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-box">📡</div>
+                <h3>Geopathic Stress</h3>
+                <p>Using scientific tools to detect and neutralize harmful earth radiations affecting your health.</p>
+                <a href="#" class="read-more">Learn More →</a>
+            </div>
+        
+    </div>
+</section>
+
+<section class="about-feature">
+    <div class="container feature-flex">
+        <div class="feature-image">
+            <img src="img research.webp" alt="Vastu Research and Analysis">
+            <div class="experience-badge">
+                <span class="years">15+</span>
+                <span class="text">Years of Research</span>
+            </div>
+        </div>
+
+        <div class="feature-content">
+            <span class="subtitle">Scientific Approach</span>
+            <h2>Why Choose IVARS?</h2>
+            <p>We don't just follow traditions; we validate them. Our institute is dedicated to the scientific study of energy frequencies and their impact on human psychology.</p>
+            
+            <ul class="feature-list">
+                <li>
+                    <strong>Precision Analysis:</strong> We use advanced energy scanning tools to map your space.
+                </li>
+                <li>
+                    <strong>Certified Experts:</strong> All our consultants are trained in both Vedic texts and modern architecture.
+                </li>
+                <li>
+                    <strong>Non-Destructive Remedies:</strong> We provide solutions that don't require structural demolition.
+                </li>
+                <li>
+                    <strong>Global Reach:</strong> Consultations provided across 20+ countries with documented success.
+                </li>
+            </ul>
+            
+            <a href="#" class="btn-primary">Learn Our Methodology</a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <img src="ivars-logo-f1.png"alt="" class="logo-img">
+            <div class="footer-brand">
+                <div class="brand-name">ivars<span></span> Organisation</div>
+                <p class="brand-description">
+                    Delivering excellence and innovation through modern design and strategic thinking.
+                </p>
+               
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="contact-info">
+                <li><span>📍</span> DS-7, DS Landmark, Canal Road, Palasuni Hata, Bhubaneswar-751010</li>
+                <li><span>📞</span> +91-8949659499 • +91-9437091212 (WhatsApp)</li>
+                <li><span>✉️</span> ivars10102025@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Stay Updated</h4>
+            <p class="newsletter-text">Subscribe for the latest news and updates.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit">Join</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2026 IVARS. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</head>
+</body>    
+</html>
