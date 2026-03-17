@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IVARS Success Stories</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Make primary headers red */
+    h1,h2,h3 { color: #dc2626; }
+
+    /* Site canvas: full-page ivory background and a soft transition into white content */
+    body { background-color: #FFFFF0; }
+    .main-canvas { background: #FFFFF0; }
+  </style>
+</head>
+<body>
+<nav class="text-white shadow-md" style="background: linear-gradient(90deg, #ff6b95 0%, #b33aa6 50%, #7b2096 100%); background-size: 200% 200%; box-shadow: 0 10px 30px rgba(179,58,166,0.12);">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Top row: logo + institute name (no-wrap) + small tagline -->
+    <div class="flex items-center justify-between py-3 md:py-5">
+    <a href="index.html" class="flex items-center gap-3">
+  <img src="assets/ivars_logo_final.png" alt="Institute of Vastu and Astro Research Studies logo" class="h-10 md:h-20 lg:h-24 flex-shrink-0" style="height:7rem; width:auto; background: transparent; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));">
+        <div class="hidden sm:flex flex-col ml-3 w-full">
+          <span class="font-semibold uppercase tracking-wide text-white whitespace-nowrap" style="font-size:1.5rem;">Institute of Vastu and Astro Research Studies</span>
+          <span class="text-xs text-white/90 italic self-end text-right">Adding Value, Impacting lives.</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="contact.html" class="inline-block bg-white text-slate-900 px-4 py-2 rounded-full font-semibold shadow hover:opacity-95">Book Appointment</a>
+      </div>
+
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md hover:bg-white/10">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Second row: centered menu for md+ -->
+    <div class="hidden md:flex items-center justify-center gap-6 border-t border-white/10 pt-3">
+      <a href="index.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Home</a>
+      <a href="about.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">About</a>
+      <a href="services.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Services</a>
+      <a href="education.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Education</a>
+      <a href="success.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Success Stories</a>
+      <a href="contact.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Contact</a>
+    </div>
+
+    <!-- Mobile menu (unchanged) -->
+    <div id="mobileMenu" class="md:hidden hidden pb-4 rounded-b-lg mt-2" style="background: linear-gradient(180deg, #b33aa6 0%, #ff6b95 60%, #7b2096 100%); box-shadow: 0 6px 16px rgba(179,58,166,0.10);">
+      <a href="index.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Home</a>
+      <a href="about.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">About</a>
+      <a href="services.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Services</a>
+      <a href="education.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Education</a>
+      <a href="success.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Success Stories</a>
+      <a href="contact.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Contact</a>
+      <div class="px-4 pt-2 pb-4">
+        <a href="contact.html" class="block w-full text-center bg-white px-4 py-2 rounded-full font-semibold" style="color: #b33aa6;">Book a consult</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-5xl mx-auto p-6 main-canvas">
+  <img src="assets/banner4.png" class="rounded-xl shadow-xl mb-6">
+  <div class="p-6 rounded-xl shadow-xl">
+    <h2 class="text-3xl font-bold">Success Stories</h2>
+    <p class="text-gray-600 mt-3">Real transformations from real clients — short case studies and testimonials that show how practical Vastu, astrology and numerology helped people improve health, relationships and business outcomes.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+      <div class="border border-gray-100 rounded-lg p-5 bg-gray-50">
+        <div class="flex items-start gap-3">
+          <div class="rounded-full bg-indigo-600 text-white w-10 h-10 flex items-center justify-center">S</div>
+          <div>
+            <div class="font-semibold">S. Patel — Entrepreneur</div>
+            <div class="text-sm text-gray-500">Bhubaneswar</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-gray-700">"IVARS helped us realign our office layout with minimal changes — staff morale improved and revenue grew within three months. The recommendations were practical and easy to implement."</blockquote>
+      </div>
+
+      <div class="border border-gray-100 rounded-lg p-5 bg-gray-50">
+        <div class="flex items-start gap-3">
+          <div class="rounded-full bg-pink-600 text-white w-10 h-10 flex items-center justify-center">A</div>
+          <div>
+            <div class="font-semibold">A. Das — Homeowner</div>
+            <div class="text-sm text-gray-500">Cuttack</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-gray-700">"The residential Vastu consultation was detailed and non-invasive. Small placement and color changes made our home feel calmer and our sleep improved dramatically."</blockquote>
+      </div>
+
+      <div class="border border-gray-100 rounded-lg p-5 bg-gray-50">
+        <div class="flex items-start gap-3">
+          <div class="rounded-full bg-green-600 text-white w-10 h-10 flex items-center justify-center">R</div>
+          <div>
+            <div class="font-semibold">R. Kumar — Student</div>
+            <div class="text-sm text-gray-500">Online Course</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-gray-700">"The astrology course was practical and the KP modules helped me start offering confident readings. The certification helped me find paid clients quickly."</blockquote>
+      </div>
+    </div>
+
+    <div class="mt-6 text-center">
+      <a href="contact.html" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Share your story</a>
+    </div>
+  </div>
+</div>
+  <footer class="text-white mt-12" style="background: linear-gradient(90deg, #ff6b95 0%, #b33aa6 50%, #7b2096 100%); background-size: 200% 200%; box-shadow: 0 -6px 24px rgba(123,32,150,0.10);">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center gap-3">
+  <img src="assets/ivars_logo_final.png" alt="IVARS logo" class="h-10" style="height:5rem; width:auto; background: transparent; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));">
+        <div>
+          <div class="font-semibold text-white">Institute of Vastu and Astro Research Studies</div>
+          <div class="text-sm italic text-white/90 text-right">Adding Value, Impacting lives.</div>
+        </div>
+      </div>
+      <div class="mt-4 md:mt-0 text-sm text-white/90">
+        <a href="contact.html" class="hover:text-white mr-4">Contact</a>
+        <a href="about.html" class="hover:text-white mr-4">About</a>
+        <a href="services.html" class="hover:text-white">Services</a>
+      </div>
+    </div>
+    <div class="text-center text-sm text-white/80 py-3">© <span id="year-success">2025</span> IVARS — All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year-success').textContent = new Date().getFullYear();</script>
+  <script>
+    (function(){
+      var btn = document.getElementById('menuBtn');
+      var menu = document.getElementById('mobileMenu');
+      if(btn && menu){ btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); }); }
+    })();
+  </script>
+
+</body></html>
