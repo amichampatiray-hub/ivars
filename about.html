@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About IVARS</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Make primary headers red */
+    h1,h2,h3 { color: #dc2626; }
+
+    /* Site canvas: full-page ivory background and a soft transition into white content */
+    body { background-color: #FFFFF0; }
+    .main-canvas { background: #FFFFF0; }
+    /* Gallery thumbnail positioning: show heads better by shifting image focal point slightly up */
+    .members-thumb { object-position: 50% 20%; }
+  </style>
+</head>
+<body>
+<nav class="text-white shadow-md" style="background: linear-gradient(90deg, #ff6b95 0%, #b33aa6 50%, #7b2096 100%); background-size: 200% 200%; box-shadow: 0 10px 30px rgba(179,58,166,0.12);">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Top row: logo + institute name (no-wrap) + small tagline -->
+    <div class="flex items-center justify-between py-3 md:py-5">
+    <a href="index.html" class="flex items-center gap-3">
+  <img src="assets/ivars_logo_final.png" alt="Institute of Vastu and Astro Research Studies logo" class="h-10 md:h-20 lg:h-24 flex-shrink-0" style="height:7rem; width:auto; background: transparent; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));">
+        <div class="hidden sm:flex flex-col ml-3 w-full">
+          <span class="font-semibold uppercase tracking-wide text-white whitespace-nowrap" style="font-size:1.5rem;">Institute of Vastu and Astro Research Studies</span>
+          <span class="text-xs text-white/90 italic self-end text-right">Adding Value, Impacting lives.</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="contact.html" class="inline-block bg-white text-slate-900 px-4 py-2 rounded-full font-semibold shadow hover:opacity-95">Book Appointment</a>
+      </div>
+
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md hover:bg-white/10">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Second row: centered menu for md+ -->
+    <div class="hidden md:flex items-center justify-center gap-6 border-t border-white/10 pt-3">
+      <a href="index.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Home</a>
+      <a href="about.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">About</a>
+      <a href="services.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Services</a>
+      <a href="education.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Education</a>
+      <a href="success.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Success Stories</a>
+      <a href="contact.html" class="px-3 py-2 rounded-md text-white/95 hover:bg-white/20 transition font-medium">Contact</a>
+    </div>
+
+    <!-- Mobile menu (unchanged) -->
+  <div id="mobileMenu" class="md:hidden hidden pb-4 rounded-b-lg mt-2" style="background: linear-gradient(180deg, #b33aa6 0%, #ff6b95 60%, #7b2096 100%); box-shadow: 0 6px 16px rgba(179,58,166,0.10);">
+      <a href="index.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Home</a>
+      <a href="about.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">About</a>
+      <a href="services.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Services</a>
+      <a href="education.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Education</a>
+      <a href="success.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Success Stories</a>
+      <a href="contact.html" class="block py-2 px-4 text-white/95 hover:bg-white/10">Contact</a>
+      <div class="px-4 pt-2 pb-4">
+        <a href="contact.html" class="block w-full text-center bg-white px-4 py-2 rounded-full font-semibold" style="color: #b33aa6;">Book a consult</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-5xl mx-auto p-6 main-canvas">
+  <img src="assets/banner1.png" class="rounded-xl shadow-xl mb-6">
+  <div class="p-6 rounded-xl shadow-xl">
+    <h2 class="text-3xl font-bold mb-2">About Us</h2>
+  <p class="text-indigo-600 font-semibold mb-4">Institute of Vastu and Astro Research Studies (IVARS)</p>
+  <p class="text-gray-600 italic mb-6">Adding Value, Impacting lives.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Main content -->
+      <div class="md:col-span-2">
+        <p class="text-gray-700"><strong>IVARS</strong> blends ancient wisdom with modern analytical approaches to provide practical, research-backed solutions in <strong>Vastu Shastra, Astrology,</strong> and <strong>Numerology</strong>. Our mission is to <strong>add value and impact lives</strong> through consultations, education and remedial programs that prioritise authenticity over superstition.</p>
+
+        <p class="text-gray-700 mt-4">We emphasise a <strong>research-oriented methodology</strong>: every consultation and course is rooted in observation, measurement and proven principles. Our non-demolition remedies and tailored plans focus on wellbeing, harmony and measurable outcomes for homes, businesses and individuals.</p>
+
+        <p class="text-gray-700 mt-4">Our team of <strong>trained consultants, researchers and faculty</strong> bring domain experience across KP Astrology, Vastu mapping, numerology and energy sciences. Through personalised guidance and structured learning, we help learners and clients achieve growth, balance and professional competence.</p>
+
+        <div class="mt-6">
+          <a href="contact.html" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Book a consultation</a>
+          <a href="education.html" class="ml-4 text-indigo-600 font-semibold">Explore courses →</a>
+        </div>
+      </div>
+
+      <!-- Highlights / cards -->
+      <div class="space-y-4">
+        <div class="border border-gray-100 rounded-lg p-4 bg-indigo-50">
+          <div class="font-semibold text-indigo-700">Research-driven</div>
+          <div class="text-sm text-gray-700 mt-2">Evidence-based scans, instruments and analysis underpin our recommendations and training.</div>
+        </div>
+
+        <div class="border border-gray-100 rounded-lg p-4 bg-green-50">
+          <div class="font-semibold text-green-700">Non-demolition Remedies</div>
+          <div class="text-sm text-gray-700 mt-2">Practical fixes like placement, color therapy and energy devices that avoid structural changes.</div>
+        </div>
+
+        <div class="border border-gray-100 rounded-lg p-4 bg-pink-50">
+          <div class="font-semibold text-pink-700">Certified Faculty</div>
+          <div class="text-sm text-gray-700 mt-2">Experienced trainers and consultants offering both classroom and online mentorship.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Team / Members gallery -->
+  <section class="max-w-5xl mx-auto p-6">
+    <div class="p-6 rounded-xl shadow-xl mt-8">
+      <h3 class="text-2xl font-bold mb-4">Our Team & Members</h3>
+      <p class="text-gray-600 mb-4">Meet the people behind IVARS. Click any photo to view full size.</p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <figure class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <a href="assets/members/Photo%20of%20Mr.%20Samarendra%20Mohanty%20-President%20and%20Board%20Member.jpg" target="_blank" class="block">
+            <img src="assets/members/Photo of Mr. Samarendra Mohanty -President and Board Member.jpg" alt="Samarendra Mohanty" class="w-full h-44 object-cover members-thumb">
+          </a>
+          <figcaption class="p-3 text-center">
+            <div class="text-sm font-semibold text-slate-900">Dr. Samarendra Mohanty</div>
+            <div class="text-xs text-gray-500 mt-1">President and Board Member</div>
+          </figcaption>
+        </figure>
+        <figure class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <a href="assets/members/Photo%20of%20Mr.%20Alokjyoti%20Mohanty,%20Secretary%20and%20Board%20Member.jpg" target="_blank" class="block">
+            <img src="assets/members/Photo of Mr. Alokjyoti Mohanty, Secretary and Board Member.jpg" alt="Alokjyoti Mohanty" class="w-full h-44 object-cover members-thumb">
+          </a>
+          <figcaption class="p-3 text-center">
+            <div class="text-sm font-semibold text-slate-900">Mr. Alokjyoti Mohanty</div>
+            <div class="text-xs text-gray-500 mt-1">Secretary and Board Member</div>
+          </figcaption>
+        </figure>
+        <figure class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <a href="assets/members/Photo%20of%20Mr.%20Rabindra%20Kumar%20Dash,%20Advisor,%20IVARS.jpg" target="_blank" class="block">
+            <img src="assets/members/Photo of Mr. Rabindra Kumar Dash, Advisor, IVARS.jpg" alt="Rabindra Kumar Dash" class="w-full h-44 object-cover members-thumb">
+          </a>
+          <figcaption class="p-3 text-center">
+            <div class="text-sm font-semibold text-slate-900">Mr. Rabindra Kumar Dash</div>
+            <div class="text-xs text-gray-500 mt-1">Advisor, IVARS</div>
+          </figcaption>
+        </figure>
+
+        <figure class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <a href="assets/members/Photo%20of%20Ms.%20Prativa%20Mohanty-Treasurer%20and%20Board%20Member.jpg" target="_blank" class="block">
+            <img src="assets/members/Photo of Ms. Prativa Mohanty-Treasurer and Board Member.jpg" alt="Prativa Mohanty" class="w-full h-44 object-cover members-thumb">
+          </a>
+          <figcaption class="p-3 text-center">
+            <div class="text-sm font-semibold text-slate-900">Ms. Prativa Mohanty</div>
+            <div class="text-xs text-gray-500 mt-1">Treasurer and Board Member</div>
+          </figcaption>
+        </figure>
+
+        <figure class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <a href="assets/members/Photo%20of%20Mr.%20Niranjan%20Nayak-%20Principal%20and%20Board%20Member.jpg" target="_blank" class="block">
+            <img src="assets/members/Photo of Mr. Niranjan Nayak- Principal and Board Member.jpg" alt="Niranjan Nayak" class="w-full h-44 object-cover members-thumb">
+          </a>
+          <figcaption class="p-3 text-center">
+            <div class="text-sm font-semibold text-slate-900">Mr. Niranjan Nayak</div>
+            <div class="text-xs text-gray-500 mt-1">Principal and Board Member</div>
+          </figcaption>
+        </figure>
+
+        <figure class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <a href="assets/members/Photo%20of%20Ms.%20Jyotsnamayee%20Mohanty-Board%20Member.jpg" target="_blank" class="block">
+            <img src="assets/members/Photo of Ms. Jyotsnamayee Mohanty-Board Member.jpg" alt="Jyotsnamayee Mohanty" class="w-full h-44 object-cover members-thumb">
+          </a>
+          <figcaption class="p-3 text-center">
+            <div class="text-sm font-semibold text-slate-900">Ms. Jyotsnamayee Mohanty</div>
+            <div class="text-xs text-gray-500 mt-1">Board Member (Retd. Architectural Engineer)</div>
+          </figcaption>
+        </figure>
+
+        <figure class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <a href="assets/members/Photo%20of%20Ms.%20Haraprava%20Sahu,%20Consultant%20cum%20Lecturer%20(Honorary).jpg" target="_blank" class="block">
+            <img src="assets/members/Photo of Ms. Haraprava Sahu, Consultant cum Lecturer (Honorary).jpg" alt="Haraprava Sahu" class="w-full h-44 object-cover members-thumb">
+          </a>
+          <figcaption class="p-3 text-center">
+            <div class="text-sm font-semibold text-slate-900">Ms. Haraprava Sahu</div>
+            <div class="text-xs text-gray-500 mt-1">Consultant cum Lecturer (Honorary)</div>
+          </figcaption>
+        </figure>
+
+        
+
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-white mt-12" style="background: linear-gradient(90deg, #ff6b95 0%, #b33aa6 50%, #7b2096 100%); background-size: 200% 200%; box-shadow: 0 -6px 24px rgba(123,32,150,0.10);">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center gap-3">
+  <img src="assets/ivars_logo_final.png" alt="IVARS logo" class="h-10" style="height:5rem; width:auto; background: transparent; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));">
+        <div>
+          <div class="font-semibold text-white">Institute of Vastu and Astro Research Studies</div>
+          <div class="text-sm italic text-white/90 text-right">Adding Value, Impacting lives.</div>
+        </div>
+      </div>
+      <div class="mt-4 md:mt-0 text-sm text-white/90">
+        <a href="contact.html" class="hover:text-white mr-4">Contact</a>
+        <a href="index.html" class="hover:text-white mr-4">Home</a>
+        <a href="services.html" class="hover:text-white">Services</a>
+      </div>
+    </div>
+    <div class="text-center text-sm text-white/80 py-3">© <span id="year-about">2025</span> IVARS — All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year-about').textContent = new Date().getFullYear();</script>
+  <script>
+    (function(){
+      var btn = document.getElementById('menuBtn');
+      var menu = document.getElementById('mobileMenu');
+      if(btn && menu){ btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); }); }
+    })();
+  </script>
+</body></html>
